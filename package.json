@@ -1,0 +1,33 @@
+{
+  "name": "reactproject",
+  "version": "1.0.0",
+  "description": "to build to do list",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install",
+    "start": "npm run build",
+    "build": "webpack -d && webpack-dev-server --content-base source/ --inline --hot --port 1234"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pprachit09/reactproject.git"
+  },
+  "author": "Prachit Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pprachit09/reactproject/issues"
+  },
+  "homepage": "https://github.com/pprachit09/reactproject#readme",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.21.0",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
