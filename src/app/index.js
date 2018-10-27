@@ -15,9 +15,9 @@ var App = createReactClass({
         return(
             <Router>
                 <div>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">Aboout</Link></li>
+                    <ul class="navigation-menu">
+                        <li class="menu-item"><Link to="/">Home</Link></li>
+                        <li class="menu-item"><Link to="/about">About</Link></li>
                     </ul>
 
                     <Route exact path={"/"} component={TodoComponent}></Route>
@@ -44,7 +44,7 @@ var TodoComponent = createReactClass({
         }.bind(this));
         return(
             <div id="todo-list">
-                <p>Need to complete below things....</p>
+                <p class="todo-alert">Need to complete below things....</p>
                 <ul>{todos}</ul>
                 <Additem onAdd={this.onAdd} />
             </div>

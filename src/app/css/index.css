@@ -16,11 +16,53 @@ body{
   }
   
   #todo-wrapper p{
-    color: #777;
+    color: #fff;
     font-style: italic;
+	font-size: 20px;
+	margin: 0;
   }
   
   #todo-list ul{
     list-style-type: none;
-    padding: 0;
+    padding: 0 40px;
   }
+  #todo-list {
+	border-top: 10px dotted rgb(95, 95, 95);
+    border-radius: 31px 31px 7px 7px;
+    border-left: 3px solid rgb(95, 95, 95);
+    border-right: 3px solid rgb(95, 95, 95);
+    border-bottom: 3px solid rgb(95, 95, 95);
+  }
+  #todo-list h3 {
+    padding: 0 20px;
+}
+#todo-list p {
+    border-top: 30px solid rgb(95, 95, 95);
+    border-radius: 5px;
+}
+  
+  
+  /* navigation menu */
+  ul.navigation-menu {
+    background-color: rgb(95, 95, 95);
+    padding: 20px;
+	font-size: 20px;
+}
+li.menu-item {
+    list-style: none;
+    display: inline;
+    padding: 0 15px;
+    border-right: solid 1px;
+    color: #B5DDA8;
+}
+li.menu-item a {
+    color: #fff;
+}
+.navigation-menu li:last-child {
+	border-right: none;
+}
+.todo-alert {
+  	color: #fff;
+    background-color: #f44336;
+	padding: 20px 5px;
+}
